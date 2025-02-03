@@ -1,0 +1,31 @@
+name: Daily morning
+
+on:
+  schedule:
+    # 每天的 00:00 UTC 运行一次
+    - cron: '0 0 * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 步骤 1: Checkout 代码
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # 步骤 2: 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'  # 你可以根据需要更改 Python 版本
+
+      # 步骤 3: 安装依赖
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt  # 安装 requirements.txt 中列出的所有依赖
+
+      # 步骤 4: 运行 Python 脚本
+      - name: Run script
+        run: |
+          python main.py  # 运行你的 Python 脚本
