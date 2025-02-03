@@ -24,7 +24,8 @@ jobs:
       # 步骤 3: 安装依赖
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt  # 安装 requirements.txt 中列出的所有依赖
+          pip install requests zhdate  # 直接安装依赖
+
 
       # 步骤 4: 运行 Python 脚本
       - name: Run script
