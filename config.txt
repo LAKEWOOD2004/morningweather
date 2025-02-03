@@ -1,0 +1,14 @@
+{
+# 微信公众号配置
+"app_id": "wx098a4ca63152c817",
+"app_secret": "527a7b0a7161d4a573845ba3ada6a763",
+"template_id": "OqDU_2zHJC0N00MTtxhf644qJ27zJKPAKezJ92q8UXk",
+"user": ["oCoBN7FIXm0HXjODhQTlvv8PgSgM","oCoBN7Lb7tJ9zxBzUIzTl4tYHPmE"], # 接收消息的微信号，多个微信用英文逗号间隔，例如["wx1", "wx2"]
+# 信息配置
+"weather_key": "bd393998c6664079858dc26d5f019909",
+"region": "北京市", # 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦
+"birthday1": {"name": "珂珂宝", "birthday": "2001-04-22"}, # 生日1，姓名和生日，生日若为农历在最前面加上r即可
+"love_date": "2024-07-02", # 在一起的日期，暂不支持农历
+"note_ch":"",
+"note_en":"",
+}
